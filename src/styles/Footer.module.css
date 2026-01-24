@@ -1,0 +1,89 @@
+/* Footer Component Styles */
+.footer {
+  background-color: var(--primary-green);
+  color: var(--white);
+  padding: 3rem 0;
+}
+
+.container {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* Logo Section */
+.logo {
+  height: 2.5rem;
+  margin-bottom: 1rem;
+  filter: brightness(0) invert(1);
+}
+
+.description {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.875rem;
+}
+
+/* Section Title */
+.title {
+  font-family: var(--font-body);
+  font-size: 1.125rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: var(--white);
+  margin-bottom: 1rem;
+}
+
+/* Links */
+.linkList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.link {
+  color: rgba(255, 255, 255, 0.8);
+  transition: color 0.2s ease;
+}
+
+.link:hover {
+  color: var(--primary-yellow);
+}
+
+/* Address */
+.address {
+  font-style: normal;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* Hours */
+.hours {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* Copyright */
+.copyright {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  text-align: center;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.875rem;
+}

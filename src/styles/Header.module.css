@@ -1,0 +1,107 @@
+/* Header Component Styles */
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background-color: var(--white);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.nav {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.navContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  height: 2.5rem;
+}
+
+@media (min-width: 768px) {
+  .logo {
+    height: 3rem;
+  }
+}
+
+/* Desktop Navigation */
+.desktopNav {
+  display: none;
+  align-items: center;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .desktopNav {
+    display: flex;
+  }
+}
+
+.navLink {
+  color: var(--foreground);
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.navLink:hover {
+  color: var(--primary-yellow);
+}
+
+.navLinkActive {
+  color: var(--primary-yellow);
+  font-weight: 700;
+}
+
+/* Mobile Menu Button */
+.menuButton {
+  display: block;
+  padding: 0.5rem;
+  color: var(--foreground);
+}
+
+@media (min-width: 768px) {
+  .menuButton {
+    display: none;
+  }
+}
+
+/* Mobile Navigation */
+.mobileNav {
+  display: block;
+  margin-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+  .mobileNav {
+    display: none;
+  }
+}
+
+.mobileNavList {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.mobileNavLink {
+  display: block;
+  padding: 0.5rem 0;
+  color: var(--foreground);
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.mobileNavLink:hover {
+  color: var(--primary-yellow);
+}
+
+.mobileNavLinkActive {
+  color: var(--primary-yellow);
+  font-weight: 700;
+}

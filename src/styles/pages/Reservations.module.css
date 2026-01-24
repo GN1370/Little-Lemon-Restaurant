@@ -1,0 +1,37 @@
+/* Reservations Page Styles */
+.hero {
+  background-color: var(--primary-green);
+  padding: 3rem 0;
+}
+
+.heroContainer {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.heroTitle {
+  font-family: var(--font-display);
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 500;
+  color: var(--primary-yellow);
+  line-height: 1;
+}
+
+.heroSubtitle {
+  font-family: var(--font-display);
+  font-size: clamp(1.5rem, 3vw, 2.5rem);
+  font-weight: 400;
+  color: var(--white);
+}
+
+.formSection {
+  padding: 4rem 0;
+  background-color: var(--white);
+}
+
+.formContainer {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 1rem;
+}

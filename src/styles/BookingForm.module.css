@@ -1,0 +1,236 @@
+/* BookingForm Component Styles */
+.wrapper {
+  max-width: 32rem;
+  margin: 0 auto;
+}
+
+/* Progress Indicator */
+.progress {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+  gap: 1rem;
+}
+
+.progressStep {
+  font-weight: 700;
+  color: var(--muted-foreground);
+}
+
+.progressStepActive {
+  font-weight: 700;
+  color: var(--primary-green);
+}
+
+.progressArrow {
+  color: var(--muted-foreground);
+}
+
+/* Form */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.sectionTitle {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--dark-gray);
+}
+
+/* Form Field */
+.field {
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--dark-gray);
+  margin-bottom: 0.5rem;
+}
+
+.input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--border);
+  font-family: var(--font-body);
+  font-size: 1rem;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.input:focus {
+  outline: none;
+  border-color: var(--primary-green);
+  box-shadow: 0 0 0 3px rgba(73, 94, 87, 0.2);
+}
+
+.inputError {
+  border-color: var(--destructive);
+}
+
+.textarea {
+  min-height: 6rem;
+  resize: vertical;
+}
+
+.error {
+  font-size: 0.875rem;
+  color: var(--destructive);
+  margin-top: 0.25rem;
+}
+
+/* Time Slots */
+.timeGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+}
+
+.timeSlot {
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  border: 2px solid var(--border);
+  font-weight: 500;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  background-color: var(--white);
+}
+
+.timeSlot:hover {
+  border-color: var(--primary-green);
+}
+
+.timeSlotSelected {
+  background-color: var(--primary-green);
+  border-color: var(--primary-green);
+  color: var(--white);
+}
+
+.noTimes {
+  grid-column: span 3;
+  color: var(--muted-foreground);
+}
+
+/* Guest Counter */
+.guestCounter {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.guestButton {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background-color: var(--primary-green);
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.2s ease;
+}
+
+.guestButton:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.guestCount {
+  font-size: 1.25rem;
+  font-weight: 700;
+  width: 2rem;
+  text-align: center;
+}
+
+/* Seating Options */
+.seatingOptions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.seatingOption {
+  flex: 1;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  font-weight: 700;
+  text-align: center;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  background-color: var(--light-gray);
+}
+
+.seatingOptionSelected {
+  background-color: var(--primary-green);
+  color: var(--white);
+}
+
+/* Select */
+.select {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--border);
+  font-family: var(--font-body);
+  font-size: 1rem;
+  background-color: var(--white);
+  cursor: pointer;
+}
+
+.select:focus {
+  outline: none;
+  border-color: var(--primary-green);
+  box-shadow: 0 0 0 3px rgba(73, 94, 87, 0.2);
+}
+
+/* Buttons */
+.buttonPrimary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 0.75rem 1.5rem;
+  border-radius: 9999px;
+  font-weight: 700;
+  font-size: 1rem;
+  background-color: var(--primary-yellow);
+  color: var(--dark-gray);
+  transition: all 0.2s ease;
+}
+
+.buttonPrimary:hover {
+  transform: scale(1.02);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+  background-color: #DDB912;
+}
+
+.buttonSecondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 0.75rem 1.5rem;
+  border-radius: 9999px;
+  font-weight: 700;
+  font-size: 1rem;
+  border: 2px solid var(--primary-green);
+  color: var(--primary-green);
+  background-color: transparent;
+  transition: all 0.2s ease;
+}
+
+.buttonSecondary:hover {
+  background-color: var(--primary-green);
+  color: var(--white);
+}
+
+.buttonRow {
+  display: flex;
+  gap: 1rem;
+}

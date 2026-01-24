@@ -1,0 +1,154 @@
+/* Menu Page Styles */
+.hero {
+  background-color: var(--primary-green);
+  padding: 3rem 0;
+}
+
+.heroContainer {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.heroTitle {
+  font-family: var(--font-display);
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 500;
+  color: var(--primary-yellow);
+  line-height: 1;
+}
+
+.heroSubtitle {
+  font-family: var(--font-display);
+  font-size: clamp(1.5rem, 3vw, 2.5rem);
+  font-weight: 400;
+  color: var(--white);
+}
+
+/* Menu Content Section */
+.contentSection {
+  padding: 4rem 0;
+  background-color: var(--white);
+}
+
+.container {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Category Filter */
+.categoryNav {
+  margin-bottom: 2.5rem;
+}
+
+.categoryList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  justify-content: center;
+}
+
+.categoryButton {
+  padding: 0.5rem 1.5rem;
+  border-radius: 9999px;
+  font-weight: 700;
+  transition: all 0.2s ease;
+  background-color: var(--light-gray);
+  color: var(--foreground);
+}
+
+.categoryButton:hover {
+  background-color: #E0E2E1;
+}
+
+.categoryButtonActive {
+  background-color: var(--primary-green);
+  color: var(--white);
+}
+
+/* Menu Grid */
+.menuGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .menuGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Menu Item Card */
+.menuItem {
+  display: flex;
+  gap: 1.5rem;
+  background-color: var(--light-gray);
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.menuItemImage {
+  width: 8rem;
+  height: 8rem;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+@media (min-width: 768px) {
+  .menuItemImage {
+    width: 10rem;
+    height: 10rem;
+  }
+}
+
+.menuItemContent {
+  padding: 1rem 1rem 1rem 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.menuItemHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 0.5rem;
+}
+
+.menuItemTitle {
+  font-family: var(--font-body);
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: var(--dark-gray);
+}
+
+.menuItemPrice {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--secondary-salmon);
+  white-space: nowrap;
+  margin-left: 0.5rem;
+}
+
+.menuItemDescription {
+  font-size: 0.875rem;
+  color: var(--muted-foreground);
+  flex-grow: 1;
+}
+
+.menuItemCategory {
+  font-size: 0.75rem;
+  color: var(--primary-green);
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: 0.5rem;
+}
+
+/* Empty State */
+.emptyState {
+  text-align: center;
+  color: var(--muted-foreground);
+  padding: 3rem 0;
+}

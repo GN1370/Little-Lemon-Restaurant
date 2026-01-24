@@ -1,0 +1,77 @@
+/* Testimonials Component Styles */
+.section {
+  padding: 4rem 0;
+  background-color: var(--light-gray);
+}
+
+.container {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.title {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 4vw, 2.5rem);
+  font-weight: 500;
+  color: var(--dark-gray);
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* Testimonial Card */
+.card {
+  background-color: var(--white);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.rating {
+  display: flex;
+  gap: 0.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.starFilled {
+  color: var(--primary-yellow);
+  fill: var(--primary-yellow);
+}
+
+.starEmpty {
+  color: #D1D5DB;
+}
+
+.star {
+  width: 1.125rem;
+  height: 1.125rem;
+}
+
+.name {
+  font-weight: 700;
+  font-size: 1.125rem;
+  margin-bottom: 0.5rem;
+}
+
+.text {
+  color: var(--muted-foreground);
+  font-size: 0.875rem;
+}

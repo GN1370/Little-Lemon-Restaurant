@@ -1,0 +1,68 @@
+/* AboutSection Component Styles */
+.section {
+  padding: 4rem 0;
+  background-color: var(--white);
+}
+
+.container {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Text Content */
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 4vw, 2.5rem);
+  font-weight: 500;
+  color: var(--primary-yellow);
+}
+
+.subtitle {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  color: var(--primary-green);
+  margin-bottom: 1.5rem;
+}
+
+.textContent {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  color: var(--foreground);
+}
+
+.text {
+  line-height: 1.6;
+}
+
+/* Image */
+.imageWrapper {
+  position: relative;
+}
+
+.image {
+  border-radius: 1rem;
+  box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  object-fit: cover;
+  aspect-ratio: 4/3;
+}
